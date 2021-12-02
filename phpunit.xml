@@ -4,9 +4,9 @@
             <directory>./tests/</directory>
         </testsuite>
     </testsuites>
-    <filter>
-        <whitelist>
+    <coverage>
+        <include>
             <file>./index.php</file>
-        </whitelist>
-    </filter>
+        </include>
+    </coverage>
 </phpunit>
