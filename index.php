@@ -13,7 +13,7 @@ $app = App::get();
 $context = $app->contexts->get(__DIR__);
 
 $app->clientPackages
-    ->add('responsivelyLazy', function (IvoPetkov\BearFrameworkAddons\ClientPackage $package) use ($context) {
+    ->add('responsivelyLazy', function (IvoPetkov\BearFrameworkAddons\ClientPackage $package) use ($context): void {
         $package->addJSCode(require_once __DIR__ . '/assets/responsivelyLazy.min.js.php');
         $package->get = 'return responsivelyLazy;';
     });
